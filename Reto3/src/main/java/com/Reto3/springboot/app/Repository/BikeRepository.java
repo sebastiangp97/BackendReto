@@ -21,12 +21,12 @@ public class BikeRepository {
         return BikeCrud.findById(id);
     }
 
-    public Optional<Bike> getBikes(int id){
-        return BikeCrud.findById(id);
-    }
-
     public Bike save(Bike p){
         return BikeCrud.save(p);
+    }
+
+    public void delete(Bike bike){
+        BikeCrud.delete(bike);
     }
     
 }
